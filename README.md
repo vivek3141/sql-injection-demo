@@ -3,6 +3,10 @@
 SQL Injection is a code injection technique that can be used to access databases without authorization.
 
 ## Trying it for yourself
+Install the dependencies with
+```bash
+pip install -r requirements.txt
+```
 Run `api.py` and open `index.html` in a browser.
 
 ## How a SQL Query could look like

@@ -27,6 +27,23 @@ def register():
     except sqlite3.Error as e:
         return str(e)
 
+
+@app.route("/search")
+def search():
+    code = request.args.get('code')
+    conn = sqlite3.connect("data.db")
+    c = conn.cursor()
+    try:
+        c.execute("select * from data where data='" + code + "'")
+        found = c.fetchall()
+        if found == []:
+            return "Invalid Code"
+        else:
+            return "Wifi Connection Established"
+    except sqlite3.Error as e:
+        return str(e)
+
+
 @app.route("/")
 def main():
     return render_template("index.html")

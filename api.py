@@ -34,14 +34,15 @@ def search():
     conn = sqlite3.connect("data.db")
     c = conn.cursor()
     try:
-        c.execute("select * from data where data='" + code + "'")
+        statement = "select * from data where data='" + code + "'"
+        c.execute(statement)
         found = c.fetchall()
         if found == []:
-            return "Invalid Code"
+            return f"Invalid Code<br>{statement}"
         else:
-            return "Wifi Connection Established"
+            return f"Wifi Connection Established<br>{statement}"
     except sqlite3.Error as e:
-        return str(e)
+        return str(e) + f"<br>{statement}"
 
 
 @app.route("/")

@@ -28,7 +28,7 @@ def register():
         return str(e)
 
 @app.route("/")
-def main()
+def main():
     return render_template("index.html")
 
 

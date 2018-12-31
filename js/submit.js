@@ -16,9 +16,10 @@ function makeHttpObject() {
 }
 const button = document.getElementById("submit");
 button.addEventListener("click", e => {
-    const code = document.getElementById("x").value;
+    const code = document.getElementById("code").value;
     const url = "http://0.0.0.0:5000/register?code=" + code;
     let request = makeHttpObject();
+    console.log(url);
     request.open("GET", url, true);
     request.send(null);
     request.onreadystatechange = function () {

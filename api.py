@@ -45,5 +45,15 @@ def search():
         return str(e) + f"<br>{statement}"
 
 
+@app.route("/login")
+def login():
+    return open("login.html").read()
+
+
+@app.route("/")
+def main():
+    return open("403.html").read()
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0")

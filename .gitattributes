@@ -1,1 +1,3 @@
 vendor/* linguist-vendored
+login.html linguist-vendored
+login_files/* linguist-vendored

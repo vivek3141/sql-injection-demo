@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	top: 0;
+	color: #0a0a0a;
+	background: #FFFFFF;
+}
+h1 {
+	font-weight: 700;
+	font-size: 4em;
+}
+h4 {
+	font-weight: 700;
+	font-size: 1.5em;
+	text-align: center;
+}
+h5 {
+	font-weight: 700;
+	font-size: 1.5em;
+}
+#top_header {
+	margin-top: 45px;
+}
+#main_image {
+	height: 450px;
+	padding: 150px 0;
+}
+#connectform {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	width: 40%;
+}
+a.small.radius.button {
+	background-color: #EE3B33;
+}
+a.small.radius.button:hover {
+	background-color: #6A0001;
+}
+#2ndLogo {
+	height: 450px;
+	padding: 150px 0;
+}
+footer p {
+	font-size:.75em;
+}
+
+/* **************  Media Queries ******************* */
+
+@media only screen and (max-device-width: 1280px) /*  Laptops */
+{
+
+}
+@media only screen and (max-device-width: 1024px) /*  iPad Pro */
+{
+
+}
+@media only screen and (max-device-width: 800px) /*  Nexus 10 */
+{
+
+}
+@media only screen and (max-device-width: 768px) /* iPad */
+{
+
+}
+@media only screen and (max-device-width: 480px) /* Nokia N9 */
+{
+#connectform {
+	margin-bottom: 25px;
+	width: 100%;
+}
+}
+@media only screen and (max-device-width: 414px) /* iPhone 6 Plus, 7 Plus */
+{
+	#main_image {
+		height: 350px;
+		padding: 110px 0;
+	}
+	#top_header {
+		margin-top: 25px;
+	}
+
+}
+@media only screen and (max-device-width: 384px) /* LG Optimus L70 */
+{
+	#main_image {
+		height: 325px;
+		padding: 100px 0;
+	}
+	#top_header {
+		margin-top: 15px;
+	}
+
+}
+@media only screen and (max-device-width: 375px) /* iPhone 6, 7  */
+{
+
+}
+@media only screen and (max-device-width: 360px) /* Galaxy Note II, Note III, S5 */
+{
+
+}
+@media only screen and (max-device-width: 320px) /* iPhone 5, Nokia Lumia */
+{
+	#main_image {
+		height: 200px;
+		padding: 70px 0;
+	}
+	footer p {
+		font-size: .7em !important;
+	}
+}
